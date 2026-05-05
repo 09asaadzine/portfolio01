@@ -6,92 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AsaaDev — UI Designer & Front-End Developer</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-    rel="stylesheet" />
-  <!-- Font Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
 
-  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <!-- Logo -->
       <a href="#hero" class="nav-logo">
-        <span class="logo-asaa">Asaa</span><span class="logo-dev">Dev</span>
+        <img src="AsaaDev.png" alt="AsaaDev" class="logo-img" />
       </a>
-
-      <!-- Desktop Links -->
       <ul class="nav-links" id="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-
-      <!-- Mobile Hamburger -->
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════ HERO ════════════════════════════════ -->
+  <!-- HERO -->
   <section class="hero" id="hero">
-    <!-- SVG abstract wave lines -->
-    <svg class="hero-waves" viewBox="0 0 900 500" preserveAspectRatio="xMidYMid slice"
-      xmlns="http://www.w3.org/2000/svg">
-      <path d="M -50 300 Q 150 100 350 250 T 750 200 T 1050 250" stroke="rgba(140,120,255,0.35)" stroke-width="1.5"
-        fill="none" />
-      <path d="M -50 350 Q 200 150 400 300 T 800 230 T 1100 280" stroke="rgba(140,120,255,0.22)" stroke-width="1.2"
-        fill="none" />
-      <path d="M -50 200 Q 100 380 300 180 T 700 280 T 1050 160" stroke="rgba(100,80,220,0.28)" stroke-width="1"
-        fill="none" />
-      <path d="M 200 -20 Q 350 180 500 80 T 800 160 T 1000 60" stroke="rgba(160,140,255,0.18)" stroke-width="1"
-        fill="none" />
-      <path d="M -100 420 Q 250 220 500 380 T 900 300 T 1150 360" stroke="rgba(120,100,240,0.20)" stroke-width="1.5"
-        fill="none" />
-      <!-- Glowing orbs -->
+    <svg class="hero-waves" viewBox="0 0 900 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <path d="M -50 300 Q 150 100 350 250 T 750 200 T 1050 250" stroke="rgba(140,120,255,0.35)" stroke-width="1.5" fill="none" />
+      <path d="M -50 350 Q 200 150 400 300 T 800 230 T 1100 280" stroke="rgba(140,120,255,0.22)" stroke-width="1.2" fill="none" />
+      <path d="M -50 200 Q 100 380 300 180 T 700 280 T 1050 160" stroke="rgba(100,80,220,0.28)" stroke-width="1" fill="none" />
+      <path d="M 200 -20 Q 350 180 500 80 T 800 160 T 1000 60" stroke="rgba(160,140,255,0.18)" stroke-width="1" fill="none" />
+      <path d="M -100 420 Q 250 220 500 380 T 900 300 T 1150 360" stroke="rgba(120,100,240,0.20)" stroke-width="1.5" fill="none" />
       <circle cx="720" cy="80" r="120" fill="rgba(120,80,255,0.07)" />
       <circle cx="100" cy="380" r="80" fill="rgba(80,60,200,0.06)" />
     </svg>
-
     <div class="hero-content">
       <p class="hero-greeting reveal">Hello 👋</p>
       <h1 class="hero-title reveal">Hi, I'm <span class="highlight">Asaad</span></h1>
       <p class="hero-subtitle reveal">UI designer &nbsp;·&nbsp; front-end web developer</p>
-      <a href="#contact" class="btn-contact reveal">
-        Contact me <i class="fa-solid fa-chevron-down"></i>
-      </a>
+      <a href="#contact" class="btn-contact reveal">Contact me <i class="fa-solid fa-chevron-down"></i></a>
     </div>
-
-    <!-- Scroll indicator -->
-    <div class="scroll-indicator">
-      <span></span>
-    </div>
+    <div class="scroll-indicator"><span></span></div>
   </section>
 
-  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
       <h2 class="section-title reveal">About Me</h2>
       <div class="about-body">
         <div class="about-text reveal">
-          <p>
-            I'm a UI design student who loves creating <strong>clean and modern digital experiences</strong>
-            that feel easy to use. I enjoy turning ideas into simple, visually appealing interfaces
-            and interactive websites.
-          </p>
-          <p>
-            Lately, I've been exploring web development and <em>"vibe coding,"</em> finding ways to
-            blend design and functionality in a natural, engaging way.
-          </p>
+          <p>I'm a UI design student who loves creating <strong>clean and modern digital experiences</strong> that feel easy to use. I enjoy turning ideas into simple, visually appealing interfaces and interactive websites.</p>
+          <p>Lately, I've been exploring web development and <em>"vibe coding,"</em> finding ways to blend design and functionality in a natural, engaging way.</p>
           <div class="skills-chips">
             <span class="chip">Figma</span>
             <span class="chip">HTML &amp; CSS</span>
@@ -102,37 +69,28 @@
         </div>
         <div class="about-visual reveal">
           <div class="avatar-ring">
-            <div class="avatar-inner">
-              <i class="fa-solid fa-code"></i>
-            </div>
+            <div class="avatar-inner"><i class="fa-solid fa-code"></i></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════ PROJECTS ════════════════════════════ -->
+  <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="container">
       <h2 class="section-title reveal">My Projects</h2>
       <p class="section-sub reveal">A selection of things I've built and designed</p>
-
       <div class="cards-grid">
 
-        <!-- Card 1 -->
+        <!-- Card 1 — Login / Signup -->
         <article class="card reveal" style="--card-delay: 0s">
-          <div class="card-visual card-v1">
-            <div class="card-mock">
-              <div class="mock-bar">
-                <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
-              </div>
-              <div class="mock-form">
-                <div class="mock-tab active">Sign up</div>
-                <div class="mock-tab">Log in</div>
-              </div>
-              <div class="mock-input"></div>
-              <div class="mock-input short"></div>
-              <div class="mock-btn"></div>
+          <a href="https://loginsystem-teal-three.vercel.app/" target="_blank" rel="noopener" class="card-link-wrap" aria-label="View Login / Signup project"></a>
+          <div class="card-visual card-screenshot">
+            <img src="preview_login.jpg" alt="Login / Signup preview" class="card-screenshot-img" />
+            <div class="card-screenshot-hover">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>View Live</span>
             </div>
           </div>
           <div class="card-overlay">
@@ -142,17 +100,14 @@
           </div>
         </article>
 
-        <!-- Card 2 -->
+        <!-- Card 2 — Calculator -->
         <article class="card reveal" style="--card-delay: 0.12s">
-          <div class="card-visual card-v2">
-            <div class="card-mock calc">
-              <div class="calc-screen">0</div>
-              <div class="calc-keys">
-                <span>7</span><span>8</span><span>9</span><span class="op">÷</span>
-                <span>4</span><span>5</span><span>6</span><span class="op">×</span>
-                <span>1</span><span>2</span><span>3</span><span class="op">−</span>
-                <span class="zero">0</span><span>.</span><span class="op">=</span>
-              </div>
+          <a href="https://calculator-two-mu-36.vercel.app/" target="_blank" rel="noopener" class="card-link-wrap" aria-label="View Calculator project"></a>
+          <div class="card-visual card-screenshot">
+            <img src="preview_calculator.png" alt="Calculator preview" class="card-screenshot-img" />
+            <div class="card-screenshot-hover">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>View Live</span>
             </div>
           </div>
           <div class="card-overlay">
@@ -162,15 +117,14 @@
           </div>
         </article>
 
-        <!-- Card 3 -->
+        <!-- Card 3 — Portfolio -->
         <article class="card reveal" style="--card-delay: 0.24s">
-          <div class="card-visual card-v3">
-            <div class="card-mock portfolio">
-              <div class="port-header"></div>
-              <div class="port-hero"></div>
-              <div class="port-grid">
-                <span></span><span></span>
-              </div>
+          <a href="https://portfolio01-xi.vercel.app/" target="_blank" rel="noopener" class="card-link-wrap" aria-label="View Professional Portfolio project"></a>
+          <div class="card-visual card-screenshot">
+            <img src="preview_portfolio.png" alt="Portfolio preview" class="card-screenshot-img" />
+            <div class="card-screenshot-hover">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>View Live</span>
             </div>
           </div>
           <div class="card-overlay">
@@ -184,50 +138,39 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════ CONTACT ═════════════════════════════ -->
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
       <h2 class="section-title reveal">Contact Me</h2>
       <p class="section-sub reveal">Reach me through any of these platforms</p>
-
       <div class="social-grid reveal">
         <a href="https://wa.me/+213674360191" target="_blank" class="social-btn whatsapp" aria-label="WhatsApp">
-          <i class="fa-brands fa-whatsapp"></i>
-          <span>WhatsApp</span>
+          <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
         </a>
-        <a href="https://www.facebook.com/share/1AzXexFpmh/" target="_blank" class="social-btn facebook"
-          aria-label="Facebook">
-          <i class="fa-brands fa-facebook-f"></i>
-          <span>Facebook</span>
+        <a href="https://www.facebook.com/share/1AzXexFpmh/" target="_blank" class="social-btn facebook" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i><span>Facebook</span>
         </a>
-        <a href="https://www.instagram.com/as3ad_m5?igsh=MWU2bnpnZG94dzZmdA==" target="_blank"
-          class="social-btn instagram" aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-          <span>Instagram</span>
+        <a href="https://www.instagram.com/as3ad_m5?igsh=MWU2bnpnZG94dzZmdA==" target="_blank" class="social-btn instagram" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i><span>Instagram</span>
         </a>
         <a href="https://t.me/+213674360191" target="_blank" class="social-btn telegram" aria-label="Telegram">
-          <i class="fa-brands fa-telegram"></i>
-          <span>Telegram</span>
+          <i class="fa-brands fa-telegram"></i><span>Telegram</span>
         </a>
-        <a href="https://vm.tiktok.com/ZS9FFfCSunsyv-eC67w/" target="_blank" class="social-btn tiktok"
-          aria-label="TikTok">
-          <i class="fa-brands fa-tiktok"></i>
-          <span>TikTok</span>
+        <a href="https://vm.tiktok.com/ZS9FFfCSunsyv-eC67w/" target="_blank" class="social-btn tiktok" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i><span>TikTok</span>
         </a>
         <a href="mailto:asaadzinou09@gmail.com" target="_blank" class="social-btn gmail" aria-label="Gmail">
-          <i class="fa-regular fa-envelope"></i>
-          <span>Gmail</span>
+          <i class="fa-regular fa-envelope"></i><span>Gmail</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <p>Copyright &copy; Asaadev Company, 2026 — All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>

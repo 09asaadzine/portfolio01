@@ -117,19 +117,22 @@ body {
 
 /* Logo */
 .nav-logo {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.45rem;
-  font-weight: 800;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: -0.01em;
 }
 
-.logo-asaa {
-  color: var(--white);
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  filter: brightness(1);
+  transition: opacity var(--trans);
 }
 
-.logo-dev {
-  color: var(--accent-light);
+.nav-logo:hover .logo-img {
+  opacity: 0.85;
 }
 
 /* Links */
@@ -493,10 +496,39 @@ body {
   transition-delay: var(--card-delay, 0s);
 }
 
+/* Clickable overlay covering entire card */
+.card-link-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  border-radius: var(--radius-card);
+}
+
 .card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px var(--accent);
   border-color: var(--accent);
+}
+
+/* View Live badge */
+.card-live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity var(--trans), transform var(--trans);
+}
+
+.card:hover .card-live-btn {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Card visual area */
@@ -910,4 +942,83 @@ body {
     padding: 0.65rem 1.2rem;
     font-size: 0.85rem;
   }
+}
+
+/* ═══════════════════════════════════════
+   SCREENSHOT CARD STYLES
+═══════════════════════════════════════ */
+
+.card-screenshot {
+  width: 100%;
+  aspect-ratio: 3/2.2;
+  position: relative;
+  overflow: hidden;
+  background: #0d0d1a;
+}
+
+.card-screenshot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: brightness(0.92);
+}
+
+.card:hover .card-screenshot-img {
+  transform: scale(1.05);
+  filter: brightness(0.45) blur(1px);
+}
+
+/* Hover overlay with "View Live" */
+.card-screenshot-hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.card-screenshot-hover i {
+  font-size: 1.6rem;
+  color: var(--accent-light);
+  margin-bottom: 0.15rem;
+}
+
+.card-screenshot-hover span {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.35rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.card:hover .card-screenshot-hover {
+  opacity: 1;
+}
+
+/* Logo image */
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  transition: opacity 0.25s ease;
+}
+
+.nav-logo:hover .logo-img {
+  opacity: 0.8;
 }
