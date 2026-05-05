@@ -5,6 +5,11 @@
 ═══════════════════════════════════════════════════════════ */
 
 /* ─── CSS Variables ──────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --bg-dark: #0d0f1a;
   --bg-mid: #111428;
@@ -38,7 +43,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   background: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.7;
@@ -53,7 +58,7 @@ body {
 
 /* Section headings */
 .section-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 800;
   text-align: center;
@@ -112,7 +117,7 @@ body {
 
 /* Logo */
 .nav-logo {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.45rem;
   font-weight: 800;
   text-decoration: none;
@@ -137,7 +142,7 @@ body {
 .nav-link {
   color: var(--text-muted);
   text-decoration: none;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 500;
   font-size: 0.92rem;
   letter-spacing: 0.06em;
@@ -265,7 +270,7 @@ body {
 }
 
 .hero-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: clamp(2.8rem, 7vw, 5rem);
   font-weight: 800;
   line-height: 1.1;
@@ -299,7 +304,7 @@ body {
   border: 1.5px solid rgba(164, 138, 255, 0.55);
   border-radius: var(--radius-btn);
   color: var(--white);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
   text-decoration: none;
@@ -675,7 +680,7 @@ body {
 }
 
 .card-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--white);
